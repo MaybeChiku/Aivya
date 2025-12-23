@@ -1,7 +1,8 @@
-from .chats import *
 from motor.motor_asyncio import AsyncIOMotorClient
 
 import config
+
+from .chats import *
 
 # Asynchronous Database Connection
 ChatBot = AsyncIOMotorClient(config.MONGO_URL)

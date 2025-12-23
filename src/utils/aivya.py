@@ -67,7 +67,8 @@ class Aivya:
             except Exception as e:
                 print(
                     f"OpenAI API request failed (attempt {
-                        attempt + 1}/2): {e}")
+                        attempt + 1}/2): {e}"
+                )
             if attempt < 1:
                 import time
 

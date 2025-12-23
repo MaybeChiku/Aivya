@@ -18,7 +18,8 @@ async def main():
     except Exception as ex:
         raise SystemExit(
             f"Bot has failed to access the log group: {
-                app.logger}")
+                app.logger}"
+        )
 
     for module in ALL_MODULES:
         importlib.import_module(f"src.modules.{module}")
